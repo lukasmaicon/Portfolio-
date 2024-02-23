@@ -358,7 +358,6 @@
     .home-Geral {
       display: block;
       text-align: center;
-      margin-left: -1rem;
     }
   
     .home-imagem {
@@ -484,7 +483,7 @@
     }
   
     .contato a {
-      font-size: 87px;
+      font-size: 50px;
     }
   
     a {
@@ -539,8 +538,7 @@
     }
   
     .contato a {
-      font-size: 60px;
-      
+      font-size: 50px;
     }
   
     a {
@@ -621,12 +619,16 @@
     }
 
     .home p {
-      font-size: 37px;
+      font-size: 30px;
       font-weight: bolder;
     }
 
     .home-cor {
       font-weight: bolder;
+    }
+
+    .contato a {
+      font-size: 35;
     }
   }
 
@@ -655,7 +657,7 @@
     }
 
     .contato a {
-      font-size: 42px;
+      font-size: 38px;
       padding-left: 25px;
     }
 
@@ -735,14 +737,14 @@
     }
 
     .home-cor {
-      font-size: 14px;
-      padding-left: 42px;
+      font-size: 12px;
+      text-align: center;
       font-weight: bolder;
     }
 
     .contato a {
-      font-size: 35px;
-      padding-left: 28px;
+      font-size: 25px;
+      text-align: center;
       font-weight: bolder;
     }
 

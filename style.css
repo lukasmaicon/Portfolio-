@@ -358,6 +358,7 @@
     .home-Geral {
       display: block;
       text-align: center;
+      margin-left: -1rem;
     }
   
     .home-imagem {
@@ -372,7 +373,7 @@
     }
   }
 
-    @media screen and (max-width: 988px) {
+  @media screen and (max-width: 988px) {
     .tecnologias-main {
       display: block;
       margin: -1rem 5rem;
@@ -446,23 +447,17 @@
   @media screen and (max-width: 730px) {
     .home p {
       font-size: 60px;
-      font-weight: bolder;
     }
 
-    .home-cor {
-      font-weight: bolder;
-    }
   }
 
   @media screen and (max-width: 603px) {
     .home p {
       font-size: 40px;
-      font-weight: bolder;
     }
 
     .home-cor {
       font-size: 25px;
-      font-weight: bolder;
     }
   }
 
@@ -478,11 +473,8 @@
       margin-left: 5px;
     }
   
-    .home {
-      font-size: 75px;
-    }
-
     .home p {
+      font-size: 35px;
       font-weight: bolder;
     }
   
@@ -534,22 +526,21 @@
     .home p {
       padding-left: 15px;
       font-weight: bolder;
-      font-size: 35px;
     }
   
     .home {
       font-size: 38px;
+      margin: -8px;
     }
   
     .home-cor {
       font-size: 20px;
-      padding-left: 18px;
       font-weight: bolder;
     }
   
     .contato a {
       font-size: 60px;
-      padding-left: 18px;
+      
     }
   
     a {
@@ -633,104 +624,106 @@
       font-size: 37px;
       font-weight: bolder;
     }
+
+    .home-cor {
+      font-weight: bolder;
     }
-  
+  }
+
   @media screen and (max-width: 376px) {
     .menu {
       height: 40px;
     }
-  
+
     .home {
       font-size: 30px;
-      margin: -10px;
+      margin: -8px;
     }
 
     .home p {
       padding-left: 35px;
       font-size: 25px;
-      font-weight: bolder;
     }
 
     .home-imagem {
       padding-left: 45px;
     }
-  
+
     .home-cor {
       font-size: 15px;
       padding-left: 30px;
-      font-weight: bolder;
     }
-  
+
     .contato a {
       font-size: 42px;
       padding-left: 25px;
     }
-  
+
     a {
       font-size: 10px;
     }
-  
+
     .home-imagem img {
       width: 240px;
       margin-left: 15px;
     }
-  
+
     .sobre img {
       display: block;
       padding-right: 3vh;
       width: 250px;
       height: 160px;
     }
-  
+
     .sobretexto {
       font-size: 11px;
     }
-  
+
     .btn {
       display: flex;
       margin: -29px 253px;
       padding: 10px;
     }
-  
+
     .projetos-caixa {
       height: 220px;
       width: 199px;
     }
-  
+
     .tecnologias-caixa {
       height: 220px;
       width: 199px;
     }
-  
+
     .projetos-caixa img {
       height: 150px;
       width: 195px;
     }
-  
+
     .projetoscaixa2 {
       height: 220px;
       width: 199px;
     }
-  
+
     .projetosdiv img {
       height: 130px;
       width: 193px;
     }
-  
+
     .proj1 {
       font-size: 13px;
       margin-top: 8px;
       margin-left: 8px;
     }
-  
+
     .carregando-projeto {
       margin-top: -100px;
     }
-  
+
     .button {
       font-size: 11px;
     }
-  
+
     footer p {
       font-size: 11px;
     }
@@ -739,7 +732,6 @@
     .home p {
       font-size: 24px;
       padding-left: 45px;
-      font-weight: bolder;
     }
 
     .home-cor {
@@ -751,12 +743,13 @@
     .contato a {
       font-size: 35px;
       padding-left: 28px;
+      font-weight: bolder;
     }
 
     .home-imagem {
       padding-left: 40px;
     }
-    }
+  }
   }
   }
   

@@ -357,7 +357,6 @@
   @media screen and (max-width: 1227px) {
     .home-Geral {
       display: block;
-      text-align: center;
     }
   
     .home-imagem {
@@ -457,7 +456,13 @@
 
     .home-cor {
       font-size: 25px;
+      font-weight: bolder;
     }
+
+    .home p {
+      font-weight: bolder;
+    }
+    
   }
 
   /* Mobile */
@@ -478,12 +483,14 @@
     }
   
     .home-cor {
-      font-size: 25px;
+      font-size: 28px;
       font-weight: bolder;
+      padding-left: 18px;
     }
   
     .contato a {
       font-size: 50px;
+      padding-left: 18px;
     }
   
     a {
@@ -625,6 +632,7 @@
 
     .home-cor {
       font-weight: bolder;
+      font-size: 80px;
     }
 
     .contato a {
@@ -653,12 +661,12 @@
 
     .home-cor {
       font-size: 15px;
-      padding-left: 30px;
+      padding-left: 35px;
     }
 
     .contato a {
       font-size: 38px;
-      padding-left: 25px;
+      padding-left: 35px;
     }
 
     a {
@@ -732,19 +740,18 @@
 
   @media screen and (max-width: 367px) {
     .home p {
-      font-size: 24px;
-      padding-left: 45px;
+      font-size: 25px;
+      padding-left: 25px;
     }
 
     .home-cor {
-      font-size: 12px;
-      text-align: center;
+      font-size: 15px;
       font-weight: bolder;
+      margin-left: -10px;
     }
 
     .contato a {
-      font-size: 25px;
-      text-align: center;
+      font-size: 34px;
       font-weight: bolder;
     }
 

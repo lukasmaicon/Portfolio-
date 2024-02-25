@@ -68,7 +68,7 @@
   }
   
   .home-Geral {
-    margin-top: 30px;
+    margin-top: 85px;
     display: flex;
     align-items: center;
   }
@@ -470,6 +470,7 @@
   @media screen and (max-width: 485px) {
     .home-Geral {
       display: inline-block;
+      margin-top: 10px;
     }
   
     .home-imagem img {
@@ -522,6 +523,7 @@
   @media screen and (max-width: 449px) {
     .home-Geral {
       display: inline-block;
+      margin-top: 10px;
     }
   
     .home-imagem img {
@@ -625,6 +627,11 @@
       margin: -16px;
     }
 
+    .home-Geral {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
     .home p {
       font-size: 33px;
       font-weight: bolder;
@@ -662,6 +669,11 @@
     .home-cor {
       font-size: 15px;
       padding-left: 35px;
+    }
+
+    .home-Geral {
+      display: inline-block;
+      margin-top: 10px;
     }
 
     .contato a {
@@ -742,6 +754,11 @@
     .home p {
       font-size: 26px;
       padding-left: 25px;
+    }
+
+    .home-Geral {
+      display: inline-block;
+      margin-top: 10px;
     }
 
     .home-cor {

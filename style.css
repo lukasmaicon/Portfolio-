@@ -470,7 +470,7 @@
   @media screen and (max-width: 485px) {
     .home-Geral {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 1px;
     }
   
     .home-imagem img {
@@ -523,7 +523,7 @@
   @media screen and (max-width: 449px) {
     .home-Geral {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 1px;
     }
   
     .home-imagem img {
@@ -629,7 +629,7 @@
 
     .home-Geral {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 1px;
     }
 
     .home p {
@@ -673,7 +673,7 @@
 
     .home-Geral {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 1px;
     }
 
     .contato a {
@@ -758,7 +758,7 @@
 
     .home-Geral {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 1px;
     }
 
     .home-cor {

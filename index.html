@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/favicon-.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Portfólio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navegacao">
+        <ul class="nav-bar">
+          <li><a href="#titulo1">Home</a></li>
+          <li><a href="#titulo2">Sobre</a></li>
+          <li><a href="#titulo3">Tecnologias</a></li>
+          <li><a href="#titulo4">Projetos</a></li>
+        </ul>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="./img/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <li><a href="#titulo1">Home</a></li>
+        <li><a href="#titulo2">Sobre</a></li>
+        <li><a href="#titulo3">Tecnologias</a></li>
+        <li><a href="#titulo4">Projetos</a></li>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="btn">
+        <i class='bx bx-sun icon sun'></i>
+        <i class='bx bx-moon icon moon'></i>
+      </div>
+      
+    <section class="container-home" id="titulo1">
+      <a class="scroll" href="#">&#9650;</a>
+      <div>
+        <h1>
+          Olá, <br />
+          Eu sou o Lucas
+        </h1>
+        <h2 class="desenvolvedor">Desenvolvedor Front End ...</h2>
+        <div class="contato">
+          <a href="https://github.com/lukasmaicon" target="_blank">
+            <ion-icon name="logo-github" class="contato-icone"></ion-icon>
+          </a>
+          <a href="https://wa.me/5535991982041" target="_blank">
+            <ion-icon name="logo-whatsapp" class="contato-icone"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/lukasmaicon/" target="_blank">
+            <ion-icon name="logo-linkedin" class="contato-icone"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <div class="img-home">
+        <img src="./img/Home.png" alt="" />
+      </div>
+    </section>
+
+    <section class="container-sobre" id="titulo2">
+      <div class="img-sobre">
+        <img src="./img/Sobre.png" />
+      </div>
+      <div class="sobre-texto">
+        <p>
+          Atualmente estou cursando Análise e Desenvolvimento de Sistemas com
+          foco no front-end. Em constante aprendizado venho colocando em prática
+          meus conhecimentos. Está sendo muito desafiador mas ao mesmo tempo
+          gratificante ver os resultados e posso dizer que me encontrei nesta
+          área, estou focado em fazer da minha rotina dedicação completa para
+          aprimorar ainda mais minhas habilidades. <br /><br />
+          Por meio desse portfólio venho me colocar à disposição para seu
+          contato, será um prazer termos uma conversa e quem sabe uma
+          oportunidade. Sou um apaixonado por tecnologia que encontrou a vontade
+          de fazer da programação mudança na vida das pessoas.
+        </p>
+      </div>
+    </section>
+
+    <section id="titulo3">
+      <div class="container-tecnologias">
+        <div class="tecnologias">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon">
+                  <i class="bx bxl-html5"></i>
+                </div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a>HTML</a>
+                </h3>
+                <p>Linguagem de marcação para construção de páginas web.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon">
+                  <i class="bx bxl-css3"></i>
+                </div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a>CSS</a>
+                </h3>
+                <p>
+                  Regras de estilo aplicadas <br />
+                  ao conteúdo do HTML.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon">
+                  <i class="bx bxl-javascript"></i>
+                </div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a>JavaScript</a>
+                </h3>
+                <p>
+                  Linguagem de programação que adiciona interatividade ao site.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-tecnologias-2">
+        <div class="tecnologias">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon">
+                  <i class="bx bxl-bootstrap"></i>
+                </div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a>Bootstrap</a>
+                </h3>
+                <p>Framework com código fonte aberto Front End.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon">
+                  <i class="bx bxl-git"></i>
+                </div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a>Git</a>
+                </h3>
+                <p>Sistema de controle para registrar o histórico.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon">
+                  <i class="bx bxl-github"></i>
+                </div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a>GitHub </a>
+                </h3>
+                <p>Plataforma de gerenciamento de códigos por meio do Git.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-projeto" id="titulo4">
+      <div class="projects-card project-one">
+        <div class="project-info-container">
+          <h3 class="project-title">Notícia Cidade</h3>
+          <span class="project-load-bar"></span>
+          <p class="project-short-desc">
+            Página web desenvolvida como parte de um curso da Udemy,
+            demonstrando habilidades em design e programação front-end.
+          </p>
+          <button class="project-btn">
+            <a href="https://lukasmaicon.github.io/Noticia-Cidade/"
+              >Clique aqui</a
+            >
+          </button>
+        </div>
+      </div>
+
+      <div class="projects-card project-one">
+        <div class="project-info-container">
+          <h3 class="project-title">Página Spotify</h3>
+          <span class="project-load-bar"></span>
+          <p class="project-short-desc">
+            Página web criada utilizando a tecnologia Bootstrap, como parte de
+            um curso da Udemy, destacando práticas modernas de design responsivo
+            e estruturação de layouts.
+          </p>
+          <button class="project-btn">
+            <a href="https://lukasmaicon.github.io/Pagina-Spotify/"
+              >Clique aqui</a
+            >
+          </button>
+        </div>
+      </div>
+
+      <div class="projects-card project-one">
+        <div class="project-info-container">
+          <h3 class="project-title">Quiz</h3>
+          <span class="project-load-bar"></span>
+          <p class="project-short-desc">
+            Desenvolvi um quiz interativo como parte de um projeto acadêmico,
+            focado em operações matemáticas básicas para crianças de 12 anos.
+          </p>
+          <button class="project-btn">
+            <a href="https://lukasmaicon.github.io/Quiz-/">Clique aqui</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <button class="button" onclick="ligarEDesligarADiv();">
+      Mais Projetos
+    </button>
+
+    <section class="projeto2">
+      <div class="projects-card project-one">
+        <div class="project-info-container">
+          <h3 class="project-title">Poços de Caldas</h3>
+          <span class="project-load-bar"></span>
+          <p class="project-short-desc">
+            Criei uma página que conta um pouco a história da minha cidade, com
+            imagens e textos sobre os pontos turísticos, curiosidades locais e
+            empresas.
+          </p>
+          <button class="project-btn">
+            <a href="https://lukasmaicon.github.io/Pocos-de-Caldas/"
+              >Clique aqui</a
+            >
+          </button>
+        </div>
+      </div>
+
+      <div class="projects-card project-one">
+        <div class="project-info-container">
+          <h3 class="project-title">EM BREVE</h3>
+          <span class="project-load-bar"></span>
+          <span class="carregando-projeto"></span>
+        </div>
+      </div>
+
+      <div class="projects-card project-one">
+        <div class="project-info-container">
+          <h3 class="project-title">EM BREVE</h3>
+          <span class="project-load-bar"></span>
+          <span class="carregando-projeto"></span>
+        </div>
+      </div>
+    </section>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 - Lucas Maicon dos Santos</p>
+    </footer>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons js"
+    ></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -279,6 +279,10 @@ i {
   margin-top: 55px;
 }
 
+.projeto2 {
+    display: none;
+}
+
 .projects-card {
   position: relative;
   width: 320px;

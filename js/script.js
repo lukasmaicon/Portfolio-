@@ -64,3 +64,43 @@ const ligarEDesligarADiv = function () {
     ? (projeto2.style.display = "none")
     : (projeto2.style.display = "flex");
 };
+
+let mobileCardsObserver = null;
+
+function enableMobileCardsOnScroll() {
+  const isMobile = window.matchMedia("(max-width: 660px)").matches;
+  const cards = document.querySelectorAll(".tecnologias .card, .projects-card");
+
+  if (!isMobile) {
+    if (mobileCardsObserver) {
+      mobileCardsObserver.disconnect();
+      mobileCardsObserver = null;
+    }
+    cards.forEach((card) => card.classList.remove("is-visible"));
+    return;
+  }
+
+  if (mobileCardsObserver) {
+    mobileCardsObserver.disconnect();
+  }
+
+  mobileCardsObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.35,
+      rootMargin: "0px 0px -10% 0px",
+    },
+  );
+
+  cards.forEach((card) => mobileCardsObserver.observe(card));
+}
+
+window.addEventListener("load", enableMobileCardsOnScroll);
+window.addEventListener("resize", enableMobileCardsOnScroll);

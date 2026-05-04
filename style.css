@@ -662,7 +662,7 @@ i {
 
 @media only screen and (max-width: 360px) {
   h2 {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .img-home img {
@@ -685,7 +685,7 @@ i {
   }
 
   h2 {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .contato a {

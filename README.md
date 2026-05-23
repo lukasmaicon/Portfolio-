@@ -1,10 +1,11 @@
 # Portfólio — Instruções de build e deploy (Vercel)
 
-Projeto React + TanStack React Start.
+Projeto React + Vite + React Router.
 
 Resumo rápido:
-- O build do cliente fica em `dist/client`.
-- `vercel.json` já está configurado para publicar `dist/client`.
+
+- O build de produção gera `dist`.
+- `vercel.json` já está configurado para publicar `dist`.
 
 Passos locais para testar:
 
@@ -14,7 +15,7 @@ Passos locais para testar:
 npm install
 ```
 
-2. Gerar build (produz `dist/client` e `dist/server`)
+2. Gerar build
 
 ```bash
 npm run build
@@ -25,10 +26,10 @@ npm run build
 ```bash
 npm run preview
 # ou usar um servidor estático, por exemplo:
-npx serve dist/client
+npx serve dist
 ```
 
-Deploy no Vercel (estático usando `dist/client`):
+Deploy no Vercel:
 
 1. Criar repositório no GitHub (ou Git provider de sua escolha).
 
@@ -44,8 +45,9 @@ git push -u origin main
 ```
 
 3. No painel do Vercel, conectar o repositório e configurar:
-- Build Command: `npm run vercel-build` (ou `npm run build`)
-- Output Directory: `dist/client`
+
+- Build Command: `npm run vercel-build`
+- Output Directory: `dist`
 
 Alternativa: usar `vercel` CLI
 
@@ -56,5 +58,6 @@ vercel --prod
 ```
 
 Observações:
-- Este projeto também inclui código para SSR (Cloudflare Workers). Se desejar deploy com SSR, recomendo fazer deploy no Cloudflare Workers e usar `wrangler`.
-- Se quiser que eu faça o push para um repositório GitHub (se você autorizar e fornecer acesso), eu posso guiar passo a passo.
+
+- Este projeto agora é um app React estático compatível com Vercel.
+- O código antigo de SSR e Cloudflare Workers foi removido.

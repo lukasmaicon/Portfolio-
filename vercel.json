@@ -1,8 +1,6 @@
 {
   "buildCommand": "npm run vercel-build",
-  "outputDirectory": "dist/client",
+  "outputDirectory": "dist",
   "cleanUrls": true,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

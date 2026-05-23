@@ -1,3 +1,8 @@
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import react from "@vitejs/plugin-react";
+import tsconfigPaths from "vite-tsconfig-paths";
+import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "vite";
 
-export default defineConfig({});
+export default defineConfig({
+  plugins: [react(), tsconfigPaths(), tailwindcss()],
+});

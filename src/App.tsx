@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { LangContext, type Lang } from "@/lib/i18n";
 import { Background } from "@/components/portfolio/Background";
 import { Navbar } from "@/components/portfolio/Navbar";
@@ -12,27 +12,26 @@ import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 import { ChatBot } from "@/components/portfolio/ChatBot";
 
-export const Route = createFileRoute("/")({
-  component: Index,
-  head: () => ({
-    title: "Lucas Maicon  Front-End Developer",
-    meta: [
-      {
-        name: "description",
-        content:
-          "Portfólio de Lucas Maicon: desenvolvedor Front-End criando experiências web modernas com React, JavaScript e IA aplicada.",
-      },
-    ],
-    links: [
-      {
-        rel: "icon",
-        href: "/favicon.png",
-      },
-    ],
-  }),
-});
+function Home() {
+  return (
+    <>
+      <Background />
+      <Navbar />
+      <main className="relative">
+        <Hero />
+        <Projects />
+        <Skills />
+        <Education />
+        <BeyondCode />
+        <Contact />
+      </main>
+      <Footer />
+      <ChatBot />
+    </>
+  );
+}
 
-function Index() {
+function App() {
   const [lang, setLang] = useState<Lang>("pt");
 
   useEffect(() => {
@@ -56,18 +55,12 @@ function Index() {
 
   return (
     <LangContext.Provider value={{ lang, setLang }}>
-      <Background />
-      <Navbar />
-      <main className="relative">
-        <Hero />
-        <Projects />
-        <Skills />
-        <Education />
-        <BeyondCode />
-        <Contact />
-      </main>
-      <Footer />
-      <ChatBot />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
     </LangContext.Provider>
   );
 }
+
+export default App;

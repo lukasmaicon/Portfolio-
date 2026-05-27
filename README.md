@@ -1,63 +1,47 @@
-# Portfólio — Instruções de build e deploy (Vercel)
+#  Lucas Maicon | Portfolio
 
-Projeto React + Vite + React Router.
+## 🇧🇷 Português
 
-Resumo rápido:
+O **Portfolio** é um site pessoal desenvolvido para centralizar meus principais projetos, habilidades técnicas e trajetórias. A interface foca na sofisticação visual, alta performance e uma experiência de usuário fluida e responsiva para apresentar meus trabalhos a recrutadores e parceiros.
 
-- O build de produção gera `dist`.
-- `vercel.json` já está configurado para publicar `dist`.
+### Desenvolvimento com IA
 
-Passos locais para testar:
+Este projeto é desenvolvido de forma colaborativa com IA (Gemini). Utilizo estas ferramentas para:
 
-1. Instalar dependências
+*   **Prototipagem Ágil:** Estruturação rápida de componentes React, páginas de captura e layouts modernos.
+*   **Refinamento de Lógica:** Otimização na organização de rotas, de código e configurações de deploy automatizado.
+*   **Melhoria Contínua:** Acessibilidade e boas práticas de desenvolvimento web.
 
-```bash
-npm install
-```
+### Tecnologias
 
-2. Gerar build
+*   React + Vite
+*   TypeScript
+*   Tailwind CSS
+*   Lucide React (Ícones)
+*   Vercel (Hospedagem e Deploy)
 
-```bash
-npm run build
-```
+---
 
-3. Visualizar build estático (opcional)
+## 🇺🇸 English
 
-```bash
-npm run preview
-# ou usar um servidor estático, por exemplo:
-npx serve dist
-```
+**Portfolio** is a personal website developed to centralize my main projects, technical skills, and career path. The interface focuses on visual sophistication, high performance, and a fluid, responsive user experience to showcase my work to recruiters and partners.
 
-Deploy no Vercel:
+### AI-Driven Development
 
-1. Criar repositório no GitHub (ou Git provider de sua escolha).
+This project is built collaboratively with AI (Gemini). I leverage these tools to:
 
-2. Inicializar git localmente e commitar:
+*   **Agile Prototyping:** Rapid creation of React components, landing pages, and modern layouts.
+*   **Logic Refinement:** Optimization of route organization, code cleanup, and automated deployment configurations.
+*   **Continuous Improvement:** Accessibility checks and web development best practices.
 
-```bash
-git init
-git add .
-git commit -m "Prepare project for Vercel"
-git branch -M main
-git remote add origin <URL_DO_REPO>
-git push -u origin main
-```
+### Technologies
 
-3. No painel do Vercel, conectar o repositório e configurar:
+*   React + Vite
+*   TypeScript
+*   Tailwind CSS
+*   Lucide React (Icons)
+*   Vercel (Hosting & Deploy)
 
-- Build Command: `npm run vercel-build`
-- Output Directory: `dist`
+---
 
-Alternativa: usar `vercel` CLI
-
-```bash
-npm i -g vercel
-vercel login
-vercel --prod
-```
-
-Observações:
-
-- Este projeto agora é um app React estático compatível com Vercel.
-- O código antigo de SSR e Cloudflare Workers foi removido.
+<p align="center">Desenvolvedor Lucas Maicon &lt;/&gt;</p>

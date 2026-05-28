@@ -116,7 +116,7 @@ export const translations = {
     nav: { about: "About", skills: "Skills", projects: "Projects", contact: "Contact" },
     hero: {
       role: "Front-End Developer",
-      title: "Crafting modern web experiences with",
+      title: "Crafting web experiences with",
       subtitle: "Developing interactive interfaces with a focus on user experience.",
       cta: "View Projects",
       ctaAlt: "Let's connect",
@@ -227,7 +227,7 @@ export const translations = {
     nav: { about: "Sobre", skills: "Habilidades", projects: "Proyectos", contact: "Contacto" },
     hero: {
       role: "Desarrollador Front-End",
-      title: "Creando experiencias web modernas con",
+      title: "Creando experiencias web con",
       subtitle: "Desarrollando interfaces interactivas con enfoque en la experiencia de usuario.",
       cta: "Ver Proyectos",
       ctaAlt: "Conectemos",

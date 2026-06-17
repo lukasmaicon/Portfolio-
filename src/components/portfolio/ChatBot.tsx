@@ -3,7 +3,11 @@ import { motion, AnimatePresence } from "motion/react";
 import { MessageCircle, X } from "lucide-react";
 import { useT, SOCIAL, WHATSAPP } from "@/lib/i18n";
 
-type Msg = { from: "bot" | "user"; text: string };
+type Msg = {
+  from: "bot" | "user";
+  text: string;
+  link?: string;
+};
 
 export function ChatBot() {
   const t = useT();
@@ -11,11 +15,7 @@ export function ChatBot() {
   const [msgs, setMsgs] = useState<Msg[]>([{ from: "bot", text: t.chat.hi }]);
 
   useEffect(() => {
-    setMsgs((currentMsgs) =>
-      currentMsgs.length === 1 && currentMsgs[0].from === "bot"
-        ? [{ from: "bot", text: t.chat.hi }]
-        : currentMsgs,
-    );
+    setMsgs([{ from: "bot", text: t.chat.hi }]);
   }, [t.chat.hi]);
 
   const handle = (q: 1 | 2 | 3) => {
@@ -29,8 +29,16 @@ export function ChatBot() {
         () =>
           setMsgs((m) => [
             ...m,
-            { from: "bot", text: `LinkedIn → ${SOCIAL.linkedin}` },
-            { from: "bot", text: `GitHub → ${SOCIAL.github}` },
+            {
+              from: "bot",
+              text: "LinkedIn",
+              link: SOCIAL.linkedin,
+            },
+            {
+              from: "bot",
+              text: "GitHub",
+              link: SOCIAL.github,
+            },
           ]),
         700,
       );
@@ -87,8 +95,9 @@ export function ChatBot() {
                 <span className="absolute -right-0.5 -bottom-0.5 h-2.5 w-2.5 rounded-full bg-green-400 ring-2 ring-background" />
               </div>
               <div>
-                <p className="text-sm font-medium text-foreground">Assistente Lucas</p>
-                <p className="text-[10px] text-muted-foreground">online</p>
+                <p className="text-sm font-medium text-foreground">{t.chat.assistantName}</p>
+
+                <p className="text-[10px] text-muted-foreground">{t.chat.status}</p>
               </div>
             </div>
 
@@ -107,7 +116,18 @@ export function ChatBot() {
                         : "glass text-foreground"
                     }`}
                   >
-                    {m.text}
+                    {m.link ? (
+                      <a
+                        href={m.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-primary hover:underline"
+                      >
+                        {m.text} →
+                      </a>
+                    ) : (
+                      m.text
+                    )}
                   </div>
                 </motion.div>
               ))}

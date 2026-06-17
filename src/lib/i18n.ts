@@ -64,8 +64,10 @@ export const translations = {
       q2: "💼 Redes Sociais",
       q3: "💬 Chamar no WhatsApp",
       a1: "Lucas trabalha com React, Tailwind CSS e JavaScript moderno, utilizando ferramentas avançadas de IA (como Cursor, Copilot, ChatGPT e Claude) para acelerar entregas com código limpo.",
-      a2: "Conecte-se: LinkedIn e GitHub disponíveis nos ícones do rodapé.",
+      a2: "Escolha uma das opções abaixo:",
       a3: "Abrindo WhatsApp...",
+      assistantName: "Assistente Lucas",
+      status: "Online",
     },
     projectList: [
       {
@@ -175,8 +177,10 @@ export const translations = {
       q2: "💼 Social Links",
       q3: "💬 WhatsApp him",
       a1: "Lucas works with React, Tailwind CSS, and modern JavaScript, leveraging advanced AI tools (such as Cursor, Copilot, ChatGPT, and Claude) to accelerate deliveries with clean code.",
-      a2: "Connect: LinkedIn and GitHub available in the footer icons.",
+      a2: "Choose one of the options below:",
       a3: "Opening WhatsApp...",
+      assistantName: "Lucas Assistant",
+      status: "Online",
     },
     projectList: [
       {
@@ -286,8 +290,10 @@ export const translations = {
       q2: "💼 Redes Sociales",
       q3: "💬 Llamarlo por WhatsApp",
       a1: "Lucas trabaja con React, Tailwind CSS y JavaScript moderno, utilizando herramientas avanzadas de IA (como Cursor, Copilot, ChatGPT y Claude) para acelerar entregas con código limpio.",
-      a2: "Conéctate: LinkedIn y GitHub disponibles en los iconos del pie de página.",
+      a2: "Elige una de las opciones a continuación:",
       a3: "Abriendo WhatsApp...",
+      assistantName: "Asistente Lucas",
+      status: "En línea",
     },
     projectList: [
       {
@@ -350,7 +356,7 @@ export const useLang = () => useContext(LangContext);
 export const WHATSAPP = "5535991982041";
 export const SOCIAL = {
   github: "https://github.com/lukasmaicon",
-  linkedin: "https://linkedin.com/",
+  linkedin: "https://www.linkedin.com/in/lukasmaicon/",
   email: "mailto:lukasmaicon1994@gmail.com",
   whatsapp: `https://wa.me/${WHATSAPP}`,
 };

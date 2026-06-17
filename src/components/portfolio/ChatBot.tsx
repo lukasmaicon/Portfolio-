@@ -101,7 +101,7 @@ export function ChatBot() {
               </div>
             </div>
 
-            <div className="flex-1 space-y-2 overflow-y-auto px-4 py-4">
+            <div className="flex-1 space-y-2 overflow-y-auto px-4 py-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               {msgs.map((m, i) => (
                 <motion.div
                   key={i}
